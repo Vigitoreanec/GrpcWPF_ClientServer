@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcWPF_Client-Server", "GrpcWPF_Client-Server\GrpcWPF_Client-Server.csproj", "{B8C4BB58-6799-4CDD-9375-E2FBE939111E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GRPC_WPF_Client", "GRPC_WPF_Client\GRPC_WPF_Client.csproj", "{029A0139-5A1F-40E8-958F-94534D7AEC1E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8C4BB58-6799-4CDD-9375-E2FBE939111E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8C4BB58-6799-4CDD-9375-E2FBE939111E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8C4BB58-6799-4CDD-9375-E2FBE939111E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8C4BB58-6799-4CDD-9375-E2FBE939111E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{029A0139-5A1F-40E8-958F-94534D7AEC1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{029A0139-5A1F-40E8-958F-94534D7AEC1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{029A0139-5A1F-40E8-958F-94534D7AEC1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{029A0139-5A1F-40E8-958F-94534D7AEC1E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {38FF1859-05E6-4F1C-A950-539E53A1FEF2}
+	EndGlobalSection
+EndGlobal
