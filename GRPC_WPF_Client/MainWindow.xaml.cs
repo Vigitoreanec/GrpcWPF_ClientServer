@@ -1,4 +1,6 @@
-﻿using System.Text;
+﻿using Grpc.Net.Client;
+using GrpcWPF_Client;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -8,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Xml.Linq;
 
 namespace GRPC_WPF_Client
 {
@@ -19,6 +22,18 @@ namespace GRPC_WPF_Client
         public MainWindow()
         {
             InitializeComponent();
+        }
+        private async void button1_Click(object sender, RoutedEventArgs e)
+        {
+            using var channel = GrpcChannel.ForAddress("https://localhost:7053");
+            var client = new Greeter.GreeterClient(channel);
+            var clientMessage = textBox1.Text;
+            textBox2.Text = clientMessage + "\n";
+            
+            var requestServer = await client.SayHelloAsync(new HelloRequest { Name = clientMessage });
+            
+            textBox1.Text = "";
+            textBox2.Text += requestServer.Message + "\n";
         }
     }
 }

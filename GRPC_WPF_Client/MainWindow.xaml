@@ -5,8 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GRPC_WPF_Client"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    
+        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+
     <Grid>
-        </Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="120"/>
+            <ColumnDefinition Width="140"/>
+            <ColumnDefinition Width="100"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0" Padding="20px"  Content="Message:"/>
+        <TextBox Grid.Row="0" Grid.Column="1" x:Name="textBox1" HorizontalContentAlignment="Center" />
+        <Button Grid.Row="0" Grid.Column="2" x:Name="button1" Content="Отправить" Click="button1_Click"/>
+
+        <Label Grid.Row="1" Grid.Column="0" Padding="10px"  Content="Message Request:"/>
+        <TextBox Grid.Row="1" Grid.Column="1" x:Name="textBox2" FontFamily="Arial" Grid.ColumnSpan="2" HorizontalScrollBarVisibility="Auto" />
+
+    </Grid>
 </Window>
